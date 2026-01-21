@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Статьи детского эндокринолога</title>
+  <meta name="description" content="Полезные статьи детского эндокринолога о здоровье, питании, ожирении, диабете и эндокринной системе у детей.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Детский эндокринолог</div>
+
+      <div class="menu">
+        <a href="index.html">Главная</a>
+        <a href="doctor.html">О враче</a>
+        <a href="articles.html">Статьи</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+
+      <div class="burger" id="burger">☰</div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Главная</a>
+      <a href="doctor.html">О враче</a>
+      <a href="articles.html">Статьи</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="section">
+    <h1>Статьи врача</h1>
+    <p>
+      В этом разделе собраны информационные материалы для родителей
+      о здоровье эндокринной системы ребёнка, правильном питании и профилактике заболеваний.
+    </p>
+  </section>
+
+  <!-- СПИСОК СТАТЕЙ -->
+  <section class="section">
+
+    <div class="card article-item" data-article-id="a1">
+      <h3>Недостаточность витамина D у детей</h3>
+      <p>Причины, симптомы, профилактика и лечение</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a2">
+      <h3>Как поддержать вес ребенка в норме</h3>
+      <p>Полезные советы для родителей</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a3">
+      <h3>Роль детского эндокринолога при избыточной массе тела</h3>
+      <p>Эффективные стратегии снижения веса</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a4">
+      <h3>Последствия низкой физической активности</h3>
+      <p>Влияние на эндокринную систему ребёнка</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a5">
+      <h3>Как за каникулы не набрать лишний вес</h3>
+      <p>Практические рекомендации</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a6">
+      <h3>Влияние отдыха на море</h3>
+      <p>Йод и заболевания щитовидной железы</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a7">
+      <h3>Сахарный диабет у детей и подростков</h3>
+      <p>Причины, симптомы и факторы риска</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a8">
+      <h3>Правила питания детей с сахарным диабетом</h3>
+      <p>Основные рекомендации</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a9">
+      <h3>Как избежать лишних килограммов в новогодние дни</h3>
+      <p>Самые вредные праздничные продукты</p>
+    </div>
+
+    <div class="card article-item" data-article-id="a10">
+      <h3>Как в детстве не столкнуться с ожирением</h3>
+      <p>Профилактика и возможные последствия</p>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  © Детский эндокринолог, Пенза
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="articleModal">
+  <div class="modal-content">
+
+    <span class="modal-close" id="closeModal">✕</span>
+
+    <div class="modal-body" id="modalBody"></div>
+
+    <div class="modal-nav">
+      <button id="prevArticle">← Предыдущая</button>
+      <span class="modal-hint">← → для переключения</span>
+      <button id="nextArticle">Следующая →</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- СКРЫТЫЕ СТАТЬИ -->
+<div style="display:none">
+
+  <article id="a1">
+    <h2>Недостаточность витамина D у детей</h2>
+    <p>Витамин D играет важную роль в формировании костной ткани и работе эндокринной системы...</p>
+  </article>
+
+  <article id="a2">
+    <h2>Как поддержать вес ребенка в норме</h2>
+    <p>Поддержание нормального веса у ребёнка требует комплексного подхода...</p>
+  </article>
+
+  <article id="a3">
+    <h2>Роль детского эндокринолога при избыточной массе тела</h2>
+    <p>Избыточная масса тела у детей может быть связана с гормональными нарушениями...</p>
+  </article>
+
+  <article id="a4">
+    <h2>Последствия низкой физической активности</h2>
+    <p>Недостаточная физическая активность негативно влияет на эндокринную систему...</p>
+  </article>
+
+  <article id="a5">
+    <h2>Как за каникулы не набрать лишний вес</h2>
+	<p>Во время каникул важно сохранить режим питания и активности...</p>
+  </article>
+
+  <article id="a6">
+    <h2>Влияние отдыха на море</h2>
+    <p>Морской климат и йод могут положительно влиять на щитовидную железу...</p>
+  </article>
+
+  <article id="a7">
+    <h2>Сахарный диабет у детей и подростков</h2>
+    <p>Сахарный диабет 1 типа чаще всего развивается в детском возрасте...</p>
+  </article>
+
+  <article id="a8">
+    <h2>Правила питания детей с сахарным диабетом</h2>
+    <p>Правильное питание является основой контроля уровня сахара в крови...</p>
+  </article>
+
+  <article id="a9">
+    <h2>Как избежать лишних килограммов в новогодние дни</h2>
+    <p>Праздничные застолья часто приводят к перееданию...</p>
+  </article>
+
+  <article id="a10">
+    <h2>Как в детстве не столкнуться с ожирением</h2>
+    <p>Профилактика ожирения должна начинаться с раннего возраста...</p>
+  </article>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
